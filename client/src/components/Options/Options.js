@@ -24,7 +24,7 @@ const Options = ({ children }) => {
     callUser,
   } = useContext(SocketContext);
   const classes = useStyles();
-  const { idToCall, setIdToCall } = useState("");
+  const [idToCall, setIdToCall] = useState("");
 
   return (
     <Container className={classes.container}>
@@ -67,7 +67,7 @@ const Options = ({ children }) => {
                 <Button
                   variant="contained"
                   color="secondary"
-                  startIcon={<PhoneDisabled frontSize="large" />}
+                  startIcon={<PhoneDisabled fontSize="large" />}
                   fullWidth
                   onClick={leaveCall}
                   className={classes.margin}
@@ -78,7 +78,7 @@ const Options = ({ children }) => {
                 <Button
                   variant="contained"
                   color="primary"
-                  startIcon={<Phone frontSize="large" />}
+                  startIcon={<Phone fontSize="large" />}
                   fullWidth
                   onClick={() => callUser(idToCall)}
                   className={classes.margin}
