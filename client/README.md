@@ -1,5 +1,5 @@
 
-# Video Chat App
+# Live Video Chat App
 
  Npm packages installed
 
